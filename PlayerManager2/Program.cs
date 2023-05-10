@@ -150,10 +150,8 @@ namespace PlayerManager2 // >>> Change to PlayerManager2 for exercise 4 <<< //
             foreach(Player p in playerList)
             {
                 if (p.Score > minScore)
-                    playersWithScoreGreaterThan.Add(p);
+                    yield return p;
             }
-
-            return playersWithScoreGreaterThan;
         }
     }
 }
